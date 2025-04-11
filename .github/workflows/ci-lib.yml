@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build lib
         run: |
-          pack --no-prompt -o bench exec fahrenheit/idris2-streams-fahrenheit/src/Main.idrk
+          pack --no-prompt -o bench exec fahrenheit/idris2-streams-fahrenheit/src/Main.idr
           time fahrenheit/idris2-streams-fahrenheit/build/exec/bench small > /dev/null
           time fahrenheit/idris2-streams-fahrenheit/build/exec/bench medium > /dev/null
           time fahrenheit/idris2-streams-fahrenheit/build/exec/bench large > /dev/null
