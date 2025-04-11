@@ -38,13 +38,13 @@ prog []         =
 prog (_::size) =
   case size of
     ["small"]       =>
-      fahrenheit @{4096} "../resources/fahrenheit_small.txt"
+      fahrenheit @{4096} "fahrenheit/resources/fahrenheit_small.txt"
     ["medium"]      =>
-      fahrenheit @{4096} "../resources/fahrenheit_medium.txt"
+      fahrenheit @{4096} "fahrenheit/resources/fahrenheit_medium.txt"
     ["large"]       =>
-      fahrenheit @{4096} "../resources/fahrenheit_large.txt"
+      fahrenheit @{4096} "fahrenheit/resources/fahrenheit_large.txt"
     ["extra_large"] =>
-      fahrenheit @{4096} "../resources/fahrenheit_extra_large.txt"
+      fahrenheit @{4096} "fahrenheit/resources/fahrenheit_extra_large.txt"
     _               =>
       stderrLn "Usage: pack run idris2-streams-fahrenheit.ipkg [small|medium|large|extra_large]"
 
